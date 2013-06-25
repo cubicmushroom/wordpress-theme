@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project version="2.0.0a1" title="">
+  <file path="src/CubicMushroom/WP/Themes/Theme.php" hash="756678466987f0bfd239bf897ddc6658" package="CubicMushroom\WP\Themes">
+    <docblock line="2">
+      <description><![CDATA[Base Theme class to be extended by individual themes]]></description>
+      <long-description><![CDATA[<p>PHP version 5</p>]]></long-description>
+      <tag line="2" name="category" description="WordPress_Themes"/>
+      <tag line="2" name="package" description="CubicMushroom_WP"/>
+      <tag line="2" name="subpackage" description="Themes"/>
+      <tag line="2" name="author" description="Toby Griffiths &lt;toby@cubicmushroom.co.uk&gt;"/>
+      <tag line="2" name="license" description="http://opensource.org/licenses/MIT MIT"/>
+      <tag line="2" name="link" description="http://cubicmushroom.co.uk" link="http://cubicmushroom.co.uk"/>
+    </docblock>
+    <namespace-alias name="Base">\CubicMushroom\WP\Core\Base</namespace-alias>
+    <namespace-alias name="PostTypeRegistrationFailedException">\CubicMushroom\WP\Exception\PostTypeRegistrationFailedException</namespace-alias>
+    <class final="false" abstract="false" namespace="CubicMushroom\WP\Themes" line="30" package="CubicMushroom\WP\Themes">
+      <name>Theme</name>
+      <full_name>\CubicMushroom\WP\Themes\Theme</full_name>
+      <extends>\CubicMushroom\WP\Core\Base</extends>
+      <docblock line="20">
+        <description><![CDATA[Base Theme class to be extended by individual themes]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="20" name="category" description="WordPress_Themes"/>
+        <tag line="20" name="package" description="CubicMushroom_WP"/>
+        <tag line="20" name="subpackage" description="Themes"/>
+        <tag line="20" name="author" description="Toby Griffiths &lt;toby@cubicmushroom.co.uk&gt;"/>
+        <tag line="20" name="license" description="http://opensource.org/licenses/MIT MIT"/>
+        <tag line="20" name="link" description="http://cubicmushroom.co.uk" link="http://cubicmushroom.co.uk"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="40" package="Default">
+        <name>$hooks</name>
+        <default><![CDATA[array(
+        'init'           => 'hookInit',
+        'admin_init'     => 'hookAdminInit'
+    )]]></default>
+        <docblock line="37">
+          <description><![CDATA[{@inheritdoc}]]></description>
+          <long-description><![CDATA[]]></long-description>
+        </docblock>
+      </property>
+    </class>
+  </file>
+  <package name="CubicMushroom" full_name="CubicMushroom">
+    <package name="WP" full_name="CubicMushroom\WP">
+      <package name="Themes" full_name="CubicMushroom\WP\Themes"/>
+    </package>
+  </package>
+  <package name="Default" full_name="Default"/>
+  <namespace name="CubicMushroom" full_name="CubicMushroom">
+    <namespace name="WP" full_name="CubicMushroom\WP">
+      <namespace name="Themes" full_name="CubicMushroom\WP\Themes"/>
+    </namespace>
+  </namespace>
+  <marker>todo</marker>
+  <marker>fixme</marker>
+</project>
